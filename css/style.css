@@ -1,0 +1,219 @@
+body {
+  margin: 0;
+  font-family: 'Merriweather', serif;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #2F3843;
+  color: rgb(240, 240, 240);
+}
+
+h4 {
+  margin: 15px
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 15px;
+  color: #2F3843;
+}
+
+.description {
+  text-align: center;
+  font-size: 14px;
+  color: lightgrey;
+}
+
+.intro {
+  margin: 15px;
+}
+
+.break1 {
+  border: 2px solid #2F3843;
+  margin: 40px 20px 0;
+  padding: 0;
+}
+
+.break2 {
+  border: 1px solid #2F3843;
+  margin: 3px 20px;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+fieldset legend {
+  font-weight: bold;
+  margin: 15px 0 5px;
+}
+
+.contact-information {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 90%;
+  margin: 20px auto 30px;
+}
+
+.contact-information label {
+  color: rgb(150, 150, 150);
+  padding: 10px 0;
+  margin-top: 8px;
+  font-size: .8em;
+}
+
+input::placeholder {
+  margin-right: 10px;
+  text-align: right;
+  font-style: italic;
+  color: rgba(200, 200, 200, .8);
+  font-size: 12px;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+select {
+  background: rgba(240,240,240, .8);
+  border: none;
+  min-height: 40px;
+  border-radius: 5px;
+}
+
+select {
+  cursor: pointer;
+}
+
+option {
+  color: rgb(200, 200, 200);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline-color: #2F3843;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, .3);
+}
+
+#zip {
+  width: 50%;
+}
+
+.newsletter {
+  border-radius: 5px;
+  margin: 20px 5%;
+}
+
+.newsletter label,
+input[type=checkbox],
+input[type=radio] {
+  color: rgb(150, 150, 150);
+  font-size: .8em;
+  line-height: 30px;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+textarea {
+    width: 80%;
+    min-height: 100px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin: 1rem auto;
+    background: rgba(240,240,240, .8);
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  cursor: pointer;
+  background: #2F3843;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  padding: 14px 0;
+  font-family: inherit;
+}
+
+button:hover {
+    transition: 0.4s;
+    background: rgb(0, 180, 140);
+}
+
+footer{
+    color: rgb(150, 150, 150);
+    text-align: center;
+    font-size: 12px;
+    font-style: italic;
+}
+
+@media (min-width: 768px) {
+
+    .break1, .break2 {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .form-header {
+      margin-bottom: 25px;
+    }
+
+    .intro {
+      margin-top: 10px;
+    }
+
+    form {
+      width: 65%;
+      margin: 50px auto;
+    }
+
+    .contact-information {
+      width: 100%;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin: 40px 0;
+    }
+    .contact-information label {
+      width: 25%;
+      padding: 0;
+      margin-right: 0;
+    }
+
+    .contact-information input, select {
+      width: 68%;
+    }
+
+    .newsletter {
+      margin: 40px auto 0;
+    }
+
+    .newsletter label {
+      margin-left: auto;
+    }
+
+    #zip {
+      width: 18%;
+    }
+
+    textarea {
+      width: 98%;
+    }
+
+    button {
+      width: 100%;
+    }
+}
